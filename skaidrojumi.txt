@@ -1,0 +1,10 @@
+J1:
+Uzrakstītu kodu kas atver failu un meklē errorus un dienu.
+Tad sadalu pa dienām.
+Tad viss tiek saskaitīts pa dienām.
+Pēctam sakārtoju visu augošā secībā.
+Izvadu vislielāko.
+
+J2:
+Bashā vajag konvertēt tekstu lai saprastu, powershell nevajag, tātad būs ātrāks.
+Ātrāk izpildīsies komanda un varbūt īsāka komanda.
