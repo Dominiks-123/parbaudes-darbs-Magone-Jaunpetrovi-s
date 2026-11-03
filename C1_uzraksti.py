@@ -9,14 +9,19 @@
 #
 # Šis fails ir tukšs. Visu kodu raksti pats zem šīs rindas.
 # ----------------------------------------------------------------------                                                                                                Mainīgo, kurā glabā līmeni, nosauc ar vārdu meklejamais.
-
-#fixer upper needed
-import sys
-if len(sys.argv)<2:
-    mekletais=input(
-        "Ievadi kļūdas līmeni (INFO, WARNING, ERROR, CRITICAL): ").upper()
-else:
-    mekletais=sys.argv[1].upper()
+import csv
+while 0!=1:
+    mekletais=input("Ievadi kļūdas līmeni (INFO, WARNING, ERROR, CRITICAL): ")
+    if mekletais == "INFO":
+        break
+    elif mekletais == "WARNING":
+        break
+    elif mekletais == "ERROR":
+        break
+    elif mekletais == "CRITICAL":
+        break
+    else:
+        print("Lūdzu ievadi ar lieliem burtiem un pārbaudi ka uzrakstīts pareizi!")
 skaits=0
 with open("sistema.log", encoding="utf-8") as f:
     for rinda in f:
@@ -25,3 +30,6 @@ with open("sistema.log", encoding="utf-8") as f:
             skaits+=1
 print("Meklētias līmenis:", mekletais)
 print("Rindu skaits:", skaits)
+with open(f"{mekletais}.csv","w", encoding="utf-8-sig",newline="") as b:
+    raks=csv.writer(b, delimiter=";")
+    raks.writerow(dalas)
